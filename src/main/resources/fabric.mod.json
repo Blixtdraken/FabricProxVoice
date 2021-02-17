@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "fabricproxvoice",
+  "version": "${version}",
+  "name": "Fabricproxvoice",
+  "description": "A Proximity Chat mod for fabric.",
+  "authors": [
+    "Blixtdraken"
+  ],
+  "contact": {
+    "repo": "https://github.com/Blixtdraken/FabricProxVoice"
+  },
+  "license": "CC",
+  "icon": "assets/fabricproxvoice/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.github.fabricproxvoice.fabricproxvoice.client.FabricproxvoiceClient"
+    ],
+    "main": [
+      "com.github.fabricproxvoice.fabricproxvoice.FabricProxVoice"
+    ]
+  },
+  "mixins": [
+    "fabricproxvoice.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.1",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
