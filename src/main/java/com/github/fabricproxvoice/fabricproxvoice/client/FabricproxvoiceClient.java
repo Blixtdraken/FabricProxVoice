@@ -18,7 +18,7 @@ public class FabricproxvoiceClient implements ClientModInitializer {
     public void onInitializeClient() {
         client = MinecraftClient.getInstance();
         KeyRegister.registerKeys(); //Register all keys inside KeyRegister class
-        new TalkIcon(client);
+
 
     }
 

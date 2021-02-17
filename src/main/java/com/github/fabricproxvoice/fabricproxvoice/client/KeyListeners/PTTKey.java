@@ -23,15 +23,12 @@ public class PTTKey {
 
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            if(keyBind.wasPressed()){
+            if(keyBind.isPressed()){
                 if(client.player != null)
-                client.player.sendMessage(new LiteralText("Pressed G"), false);
-
-
-
+                FabricproxvoiceClient.talkIcon.shouldIconShow = true; // show talk icon
                 //If PTT is on -> //Open Microphone -> //Show Microphone icon
-
-
+            }else if(FabricproxvoiceClient.talkIcon.shouldIconShow == true){ // if key isnt pressed stop showing talk icon
+                FabricproxvoiceClient.talkIcon.shouldIconShow = false;
             }
         });
 
